@@ -26,13 +26,3 @@ docker run -d -p 8000:8000 -e TARGET_URL=https://your-target-url.com -e PORT=800
 
 - `TARGET_URL`: The URL of the target server to which the requests will be proxied. Default is `https://default-target-url.com`.
 - `PORT`: The port on which the proxy server will listen. Default is `8000`.
-
-### Example
-
-```bash
-docker run -d -p 8000:8000 -e TARGET_URL=https://example.com -e PORT=8000 fadlee/node-proxy
-```
-
-This command runs the proxy server in a Docker container, forwarding requests from `http://localhost:8000` to `https://example.com`.
-
-
